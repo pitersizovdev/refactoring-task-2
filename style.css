@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+::-webkit-scrollbar { /*убираем скролл бар*/
+  display: none;
+}
+
+body {
+  margin: auto;
+	background-color:#759e9a;
+	font-family: 'Montserrat',sans-serif;
+}
+
+h2 {
+	font-size:40px;
+	color: #efdbba;
+}
+header {
+  position: relative;
+}
+
+.video-cover {
+  width: 100%;
+  object-fit: cover; /* Заполняет контейнер видео */
+}
+
+.text-box {
+  position: absolute;
+  top: 50%; /* Размещаем текст посередине вертикали */
+  left: 50%; /* Размещаем текст посередине горизонтали */
+  transform: translate(-50%, -50%); /* Центрируем текст относительно родительского блока */
+  text-align: center; /* Центрируем текст по горизонтали */
+  color: white;
+}
+
+.text-box h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.text-box p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.hero-btn {
+  border-radius: 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+
+
+
+
+/*второй экран*/
+#slider{
+  margin:20px 0 20px 0;
+}
+
+
+.vtoroy {
+	background-color:#759e9a;
+	padding:50px 20px 100px 30px;
+
+}
+
+/*Полный контейнер со слайдером*/
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+  border-radius: 30px 30px 30px 30px;
+  background-color:#000000;
+}
+
+/* Анимация */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*Расположение фото в слайдере*/
+.imger{
+	display:flex;
+	justify-content:center;
+}
+
+
+@media (min-width: 600px) {
+.imger{
+	display:flex;
+	justify-content:center;
+}
+}
+
+/* Нумерация слайдов */
+.numbertext {	
+  color: #efdbba;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 6px;
+}
+
+/* Текст на слайдах */
+.text {
+  color: #efdbba;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Сами стрелочки */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin: -22px 20px 0 20px;
+  padding: 16px;
+  color: #efdbba;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+}
+
+.next {
+  right: 0;
+}
+
+/* Фон при наведении на стрелочки */
+.prev:hover, .next:hover {
+  background-color:#759e9a;
+  opacity:60%;
+  border-radius: 100px;
+}
+
+/* Точечки-переключатели */
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #efdbba;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Третья страница */
+#portfolio{
+  padding: 30px;
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Автоматически подстраиваем колонки при изменении размеров экрана */
+  grid-gap: 40px; /* Расстояние между карточками */
+  justify-content: center; /* Центрируем содержимое */
+  align-items: center; /* Центрируем содержимое */
+  text-align: center; /* Центрируем содержимое */
+}
+
+.card {
+  position: relative; 
+  border-radius: 20px;
+  margin-top: 20px; /* Расстояние между карточками в столбце */
+}
+
+.project-2-img {
+  width: 100%; /* Чтобы картинка занимала всю ширину родительского элемента */
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+  position: relative; 
+}
+
+.project-2-img:hover {
+  transform: scale(1.1);
+}
+
+.project-btn {
+  position: absolute; 
+  bottom: 10%; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  text-decoration: none;
+  color: black;
+  border: 1px solid #efdbba;
+  padding: 8px 20px;
+  font-size: 13px;
+  background: #efdbba;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 20px;
+  z-index: 1; 
+}
+
+.project-btn:hover {
+  border: 1px solid #759e9a;
+  background: #759e9a;
+  color: #efdbba;
+}
+
+#portfolio1{
+  margin: auto;
+  max-width: 900px;
+  justify-content: center; /* Центрируем содержимое */
+  align-items: center; /* Центрируем содержимое */
+  text-align: center; /* Центрируем содержимое */
+}
+#portfolio2{
+  background-color: #efdbba;
+}
+
+
+
+
+
+
+
+#prices {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку, если не хватает места */
+  justify-content: space-around; /* Равномерное распределение пространства между карточками */
+}
+
+.price-block {
+  text-align: center;
+  position: relative;
+  flex: 1; /* Каждая карточка занимает равный размер */
+  margin: 40px 10px  10px 10px ;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Устанавливаем фиксированную ширину карточек */
+  margin-bottom: 20px; /* Добавляем отступ снизу для разделения карточек */
+}
+
+
+
+
+
+/* Четвертая страница */
+#contact{
+	background-color:#759e9a;
+}
+
+/* Окончание формы обратной связи */
+#contact .container {
+	text-align: center;
+	padding-bottom:20px;
+}
+
+/* Максимальная ширина формы */
+#contact form {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+input, textarea {
+	color:black;
+}
+
+	  
+#contact input, #contact textarea {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #759e9a;
+	box-sizing: border-box;
+	font-size: 16px;
+	border-radius: 10px;
+	color: #fff;
+}
+
+	  
+#contact button {
+	color: #efdbba;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	font-size: 16px;
+	border-radius: 50px;
+	transition: all 0.3s ease;
+}
+
+.submit {
+	 background-color:black;
+	 font-family: 'Montserrat',sans-serif;
+	 opacity: 80%;
+}
+
+.submit:hover {
+	transform: scale(0.95); /* Немного уменьшаем размер при наведении */
+	opacity: 100%;
+}
+	
+
+footer{
+background-color:#000000;
+height:100px;
+    width: auto;
+    text-align: center;
+;
+	margin: 0 -8px -8px -8px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons a {
+  margin: 30px 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-icons img {
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s ease;
+  opacity: 80%;
+}
+
+.footer-icons img:hover {
+	width: 34px;
+	height: 34px;
+	opacity: 100%;
+}
+
+
+@media (max-width: 600px) {
+  #contact form {
+    max-width: 100%; /* Изменяем максимальную ширину формы на всю доступную ширину */
+  }
+
+  #contact input, #contact textarea {
+    width: 100%; /* Занимают всю доступную ширину */
+  }
+
+  #contact .submit {
+    width: 100%; /* Кнопка занимает всю доступную ширину */
+  }
+
+  footer {
+    height: auto; /* Подвал занимает необходимую высоту в зависимости от содержимого */
+  }
+
+  .footer-icons {
+    flex-direction: column; /* Изменяем направление отображения иконок на вертикальное */
+  }
+
+  .footer-icons a {
+    margin: 10px; /* Уменьшаем отступы между иконками */
+  }
+}

@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  max-width: 1280px;
+  margin: auto;
+	background-color:#759e9a;
+	font-family: 'Montserrat',sans-serif;
+}
+
+h2 {
+	font-size:40px;
+	color: #efdbba;
+}
+
+header {
+  position: relative; /* Устанавливаем позицию */
+}
+
+
+
+
+/* Стили для текстового блока */
+.text-box {
+  position: absolute; /* Устанавливаем позицию */
+  top: 50%; /* Размещаем блок на 50% высоты родительского контейнера */
+  left: 50%; /* Размещаем блок на 50% ширины родительского контейнера */
+  transform: translate(-50%, -50%); /* Центрируем блок относительно его половины */
+  text-align: center; /* Выравниваем текст по центру */
+}
+
+/* Стили для кнопки */
+.hero-btn {
+  display: inline-block; /* Устанавливаем блочный элемент */
+  margin-top: 20px; /* Добавляем отступ сверху */
+  padding: 10px 20px; /* Задаем отступ кнопки */
+  background-color: #fff; /* Цвет фона кнопки */
+  color: #000; /* Цвет текста кнопки */
+  text-decoration: none; /* Убираем стандартное подчеркивание у ссылки */
+}
+
+
+
+
+/*Для всего блока текста в первом экране*/
+.text-box{
+    color: #fff;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+	margin-top: 14vh; 
+}
+
+/*Для Анастасии Предеиной*/
+.text-box h1{
+	font-size: 50px;
+}
+
+.text-box h1:hover{
+	  color: #efdbba;
+	  transition: all 0.3s ease;
+}
+
+
+/*Для основного текста в первом блоке*/
+.text-box p{
+	text-align:left;
+    margin: 0px 0 20px;
+	width:600px;
+    font-size: 16px;
+    color: #fff;
+}
+
+@media (min-width: 600px) {
+.text-box p{
+	text-align:left;
+    margin: 0px 0 20px;
+    font-size: 16px;
+    color: #fff;
+}
+}
+
+/*для кнопки "Портфолио*/
+.hero-btn {
+	top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 5px solid #525252;
+    border-radius: 20px;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #525252;
+	opacity: 80%;
+}
+
+.hero-btn:hover {
+  transform: scale(0.97); /* Немного уменьшаем размер при наведении */
+  opacity: 100%;
+}
+
+/*видео*/
+.video-cover {
+  width: 100%; /* Ширина контейнера будет соответствовать 100% ширины экрана */
+  height:  100%; /* Высота контейнера будет соответствовать 100% высоты экрана */
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  z-index: -9;
+}
+
+/*второй экран*/
+.vtoroy {
+	background-color:#759e9a;
+	padding:50px 20px 100px 30px;
+
+}
+
+/*Полный контейнер со слайдером*/
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+  border-radius: 30px 30px 30px 30px;
+  background-color:#000000;
+}
+
+/* Анимация */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*Расположение фото в слайдере*/
+.imger{
+	display:flex;
+	justify-content:center;
+}
+
+
+@media (min-width: 600px) {
+.imger{
+	display:flex;
+	justify-content:center;
+}
+}
+
+/* Нумерация слайдов */
+.numbertext {	
+  color: #efdbba;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 6px;
+}
+
+/* Текст на слайдах */
+.text {
+  color: #efdbba;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Сами стрелочки */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin: -22px 20px 0 20px;
+  padding: 16px;
+  color: #efdbba;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+}
+
+.next {
+  right: 0;
+}
+
+/* Фон при наведении на стрелочки */
+.prev:hover, .next:hover {
+  background-color:#759e9a;
+  opacity:60%;
+  border-radius: 100px;
+}
+
+/* Точечки-переключатели */
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #efdbba;
+}
+
+/* Третья страница */
+#portfolio{
+		background-color:#efdbba;
+		padding: 30px;
+		margin: 0 -8px 0 -8px;
+}
+
+.portfolio-text, contact-text{
+        text-align: center;
+		color:#759e9a;
+		font-size: 30px;
+
+}
+
+/* Общий класс с карточками */
+.cards {
+  max-width: 1000px;
+  margin: 1rem auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.card {
+  position: relative; /* Обязательно установите относительное позиционирование для карточки */
+  text-align: center; /* Центрируем содержимое карточки */
+}
+
+.project-2-img {
+  max-width: 100%;
+  display: block; 
+  height: auto;
+  border-radius: 20px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.project-2-img:hover {
+  transform: scale(0.95); /* Немного уменьшаем размер при наведении */
+  opacity: 80%;
+}
+
+.project-btn {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #efdbba;
+  padding: 8px 20px;
+  font-size: 13px;
+  background: #efdbba;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 20px;
+}
+
+.project-btn:hover{
+    border: 1px solid #759e9a;
+    background: #759e9a;
+	color: #efdbba;
+}
+
+
+.prices {
+  max-width: 1200px;
+  display: flex;
+}
+
+.price-block {
+  flex: 1; /* Каждая карточка занимает равный размер */
+    margin: 0 10px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Четвертая страница */
+#contact{
+	background-color:#759e9a;
+	padding-top:20px;
+}
+
+/* Окончание формы обратной связи */
+#contact .container {
+	text-align: center;
+	padding-bottom:20px;
+}
+
+/* Максимальная ширина формы */
+#contact form {
+        max-width: 500px;
+        margin: 0 auto;
+}
+
+input, textarea {
+	color:black;
+}
+
+	  
+#contact input, #contact textarea {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #759e9a;
+	box-sizing: border-box;
+	font-size: 16px;
+	border-radius: 10px;
+	color: #fff;
+}
+
+	  
+#contact button {
+	color: #efdbba;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	font-size: 16px;
+	border-radius: 50px;
+	transition: all 0.3s ease;
+}
+
+.submit {
+	 background-color:black;
+	 font-family: 'Montserrat',sans-serif;
+	 opacity: 80%;
+}
+
+.submit:hover {
+	transform: scale(0.95); /* Немного уменьшаем размер при наведении */
+	opacity: 100%;
+}
+	
+
+footer{
+background-color:#000000;
+height:100px;
+    width: auto;
+    text-align: center;
+;
+	margin: 0 -8px -8px -8px;
+}
+
+
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons a {
+  margin: 30px 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-icons img {
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s ease;
+  opacity: 80%;
+}
+
+.footer-icons img:hover {
+	width: 34px;
+	height: 34px;
+	opacity: 100%;
+}
+
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+  }
+  
+  @media (max-width: 600px) {
+  .cards { grid-template-columns: repeat(1, 1fr); }
+  .card {height: 350px;}
+  .card h2 {font-size: 10px;}
+  }
+    
+  @media (min-width: 800px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+  .card {height: 300px;}
+  }
+  
+  /* Screen larger than 900px? 3 columns */
+  @media (min-width: 900px) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
+  .card {height: 230px;}
+  .card img{
+    max-width:100%;
+    max-height:100%;
+    
+  }
+  }
+  

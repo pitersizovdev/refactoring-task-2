@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" >
+    <title>Anastasia Predeina</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+<body>
+
+
+<header>
+  <video class="video-cover" autoplay loop muted >
+    <source src="src/images/video-background1.mp4"> 
+  </video>
+
+  <div id="home" class="text-box">
+    <h1 href="#contact">Анастасия Предеина</h1>
+    <div id="InLine">
+      <p>Люблю людей, природу и каждое мгновение этого живописного мира</p>
+      <p>Я имею в виду, они мои друзья. 
+      <p>Большинство из них я никогда не встречала прежде или вообще не знала, но благодаря своим фотографиям я с ними живу</p>
+  </div>
+    <a href="#slider" class="hero-btn">Портфолио</a>
+  </div>
+</header>
+
+<!--Слайдер-->
+<section id="slider">
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+    <div class="imger">
+      <div class="numbertext">1 / 6</div>
+      <img src="src/img/1.png" style="height:600px"></div>
+      <div class="text">Пейзажные</div>
+    </div>
+  
+    <div class="mySlides fade">
+    <div class="imger">
+      <div class="numbertext">2 / 6</div>
+      <img src="src/img/14.jpg" style="height:600px"></div>
+      <div class="text">Живые</div>
+    </div>
+  
+    <div class="mySlides fade">
+    <div class="imger">
+      <div class="numbertext">3 / 6</div>
+      <img src="src/img/27.jpg" style="height:600px"></div>
+      <div class="text">Невероятные</div>
+    </div>
+  
+     <div class="mySlides fade">
+     <div class="imger">
+      <div class="numbertext">4 / 6</div>
+      <img src="src/img/13.jpg" style="height:600px"></div>
+      <div class="text">Природные</div>
+    </div>
+  
+    <div class="mySlides fade">
+    <div class="imger">
+      <div class="numbertext">5 / 6</div>
+      <img src="src/img/8.jpg" style="height:600px"></div>
+      <div class="text">Захватывающие</div>
+    </div>
+  
+    <div class="mySlides fade">
+    <div class="imger">
+      <div class="numbertext">6 / 6</div>
+      <img src="src/img/6.jpg" style="height:600px"></div>
+      <div class="text">Вечерние</div>
+    </div>
+  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
+</section>
+
+<!--Портфолио-->
+<div id="portfolio2">
+<div id="portfolio1">
+<section id="portfolio">
+  <div class="card">
+    <img class="project-2-img" src="src/img/r1.png">
+    <a href="#contact" class="project-btn">Подводные</a>
+  </div>
+  
+  <div class="card">
+    <img class="project-2-img" src="src/img/r2.png">
+    <a href="#contact" class="project-btn">Пейзажные</a>
+  </div>
+  
+  <div class="card">
+    <img class="project-2-img" src="src/img/r3.png">
+    <a href="#contact" class="project-btn">Парные</a>
+  </div>
+  
+  <div class="card">
+    <img class="project-2-img" src="src/img/r4.png">
+    <a href="#contact" class="project-btn">Художественные</a>
+  </div>
+  
+  <div class="card">
+    <img class="project-2-img" src="src/img/r5.png">
+    <a href="#contact" class="project-btn">Тематические</a>
+  </div>
+  
+  <div class="card">
+    <img class="project-2-img" src="src/img/r6.png">
+    <a href="#contact" class="project-btn">Детские</a>
+  </div>
+</section>
+</div>
+</div>
+
+<!-- Прайс-лист -->
+<section id="priseList">
+<div id="prices">
+  <div class="price-block">
+    <h3>Индивидуальная фотосессия</h3>
+    <p>Цена: $100 за час</p>
+    <p>Включает 20 готовых фотографий в цифровом формате</p>
+  </div>
+
+  <div class="price-block">
+      <h3>Парная фотосессия</h3>
+      <p>Цена: $150 за час</p>
+      <p>Включает 30 готовых фотографий в цифровом формате</p>
+  </div>
+</div>
+</section>
+
+
+
+
+<!-- Форма обратной связи -->
+<section id="contact">
+      <div class="container">
+        <h2>Оставить отзыв</h2>
+        <form action="https://script.google.com/macros/s/AKfycbxmoLMZbIuRFKyFepmvOhwK0bs9G-Db-B-SoxF_zgHpRo5UN7uzrjprPPF2QQcQFWaoZA/exec" method="POST">
+          <div class="form-group">
+            <label for="name" style="color:#efdbba;">Имя</label>
+            <input style="color:black;	font-family: 'Montserrat',sans-serif;" type="text" id="name" name="name">
+          </div>
+          <div class="form-group">
+            <label for="email" style="color:#efdbba;">Email</label>
+            <input style="color:black;	font-family: 'Montserrat',sans-serif;" type="email" id="email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="message" style="color:#efdbba;">Сообщение</label>
+            <textarea style="color:black;	font-family: 'Montserrat',sans-serif;" id="message" name="message" rows="5"></textarea>
+          </div>
+          <button class="submit">Отправить</button>
+        </form>
+      </div>
+</section>
+
+<!-- Футер-->	
+<footer>
+  <div class="footer-icons">
+    <a href="tel:89633534311"><img src="src/img/phone.png" alt="Телефон"></a>
+    <a href="https://vk.com/predeina_nastya"><img src="src/img/vk.png" alt="ВКонтакте"></a>
+    <a href="https://t.me/predeinad"><img src="src/img/telegram.png" alt="Телеграм"></a>
+    <a href="mailto:nstprd@mail.com"><img src="src/img/mail.png" alt="E-mail"></a>
+  </div>
+</footer>
+
+</body>
+<script src="script.js"></script>
+</html>
