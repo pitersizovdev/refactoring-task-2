@@ -59,12 +59,9 @@ header {
 }
 
 
-
-
-
 /*второй экран*/
 #slider{
-  margin:20px 0 20px 0;
+  margin:40px 0 40px 0;
 }
 
 
@@ -237,6 +234,8 @@ header {
 }
 
 #portfolio1{
+  color: #759e9a;
+  padding-top: 50px;
   margin: auto;
   max-width: 900px;
   justify-content: center; /* Центрируем содержимое */
